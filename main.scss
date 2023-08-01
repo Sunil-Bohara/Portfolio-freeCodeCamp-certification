@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+// @import "media";
+
+$main-white: #f0f0f0;
+$main-red: #be3144;
+$main-blue: #45567d;
+$main-gray: #303841;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    background-color: $main-red;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    a {
+        color: $main-white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 1.5rem;
+
+        &:nth-last-of-type(1) {
+            margin-inline-end: 1.2rem;
+        }
+
+        &:hover {
+            background-color: rgba(0, 139, 139, 0.671);
+        }
+    }
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: $main-gray;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: $main-white;
+        font-size: 4rem;
+    }
+
+    p {
+        color: $main-red;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+}
+
+#projects {
+    width: 100%;
+    background-color: $main-blue;
+    padding-bottom: 8rem;
+    display: grid;
+    place-content: center;
+
+    .projects-header {
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+
+    h2 {
+        width: 41rem;
+        display: inline-block;
+        color: $main-white;
+        font-size: 2.7rem;
+        border-bottom: 2px solid #fff;
+        padding-bottom: .2rem;
+    }
+
+    .btn-div {
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        .btn {
+            font-size: 1.4rem;
+            border: none;
+            background-color: none;
+            width: 140px;
+            padding: 10px 14px;
+            color: #fff;
+            background-color: $main-gray;
+
+            &:hover{
+                background-color: $main-red;
+                transition: 0.28s;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.project-box {
+    img {
+        // width: 400px;
+        width: 27vw;
+        height: 389px;
+        margin-bottom: -0.3rem;
+    }
+
+    p {
+        // width: 25rem;
+        width: 27vw;
+        background-color: $main-gray;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 1.2rem;
+        margin-top: 0px;
+    }
+
+    span {
+        opacity: 0;
+    }
+}
+
+#projects-grid-container {
+    width: 85%;
+    height: auto;
+    display: grid;
+    // grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+
+#contact {
+    width: 100%;
+    height: auto;
+    background-color: $main-gray;
+    color: #fff;
+
+    .contact-header {
+        text-align: center;
+        padding-top: 10rem;
+
+        h2 {
+            font-size: 3.7rem;
+            padding-bottom: 1.3rem;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+        }
+    }
+
+    .contact-links {
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.4rem;
+            margin-inline: 1rem;
+
+            img {
+                height: auto;
+                width: 30px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #3a3d40;
+    border-top: 3px solid $main-red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        padding: 2rem;
+        letter-spacing: 4px;
+    }
+}
+
+// Importing media queries here so that media queries don't get overwrite by general scss.
+
+@import "media";
