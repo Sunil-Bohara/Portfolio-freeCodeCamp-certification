@@ -105,10 +105,10 @@ body {
   font-size: 1.4rem;
   text-align: center;
   padding: 1.2rem;
-  margin-top: 0px;
 }
-.project-box span {
-  opacity: 0;
+.project-box p span {
+  text-decoration: none;
+  opacity: 1;
 }
 
 #projects-grid-container {
@@ -219,7 +219,7 @@ footer p {
     justify-content: center;
   }
   #navbar a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #welcome-section h1 {
     font-size: 2rem;
@@ -228,24 +228,38 @@ footer p {
     font-size: 1rem;
   }
   .project-box img {
-    width: 80vw;
+    width: 85vw;
+    height: 50vh;
   }
   .project-box p {
-    width: 80vw;
+    width: 85vw;
     font-size: 1rem;
   }
   #projects-grid-container {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  #projects {
+    padding-bottom: 3rem;
+  }
+  #projects .projects-header {
+    padding-block: 2.5rem;
   }
   #projects h2 {
     width: 15rem;
     font-size: 1.3rem;
   }
   #contact .contact-header {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   #contact .contact-header h2 {
     font-size: 3rem;
+  }
+  #contact .contact-header p {
+    font-size: 1.3rem;
+  }
+  #contact .contact-links {
+    padding-block: 1.5rem;
   }
   #contact .contact-links a {
     font-size: 0.6rem;
@@ -260,5 +274,60 @@ footer p {
   footer p {
     font-size: 0.6rem;
     padding: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  #navbar {
+    justify-content: center;
+  }
+  #navbar a {
+    font-size: 0.9rem;
+  }
+  #navbar a:nth-last-of-type(1) {
+    margin-inline-end: 0rem;
+  }
+  #welcome-section h1 {
+    font-size: 1.5rem;
+  }
+  #welcome-section p {
+    font-size: 0.8rem;
+  }
+  .project-box img {
+    width: 90vw;
+    height: 45vh;
+  }
+  .project-box p {
+    width: 90vw;
+    font-size: 1rem;
+  }
+  #projects {
+    padding-bottom: 2rem;
+  }
+  #projects .projects-header {
+    padding-top: 2rem;
+  }
+  #contact .contact-header {
+    padding-top: 2rem;
+  }
+  #contact .contact-header h2 {
+    font-size: 2rem;
+  }
+  #contact .contact-header p {
+    font-size: 1rem;
+  }
+  #contact .contact-links {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-block: 1.5rem;
+  }
+  #contact .contact-links a {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  #contact .contact-links a img {
+    width: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

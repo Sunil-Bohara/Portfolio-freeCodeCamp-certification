@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-// @import "media";
 
 $main-white: #f0f0f0;
 $main-red: #be3144;
@@ -126,11 +125,13 @@ body {
         font-size: 1.4rem;
         text-align: center;
         padding: 1.2rem;
-        margin-top: 0px;
-    }
+        // margin-top: 0px;
+        // border-bottom: 2px solid red;
 
-    span {
-        opacity: 0;
+        span {
+            text-decoration: none;
+            opacity: 1;
+        }
     }
 }
 
